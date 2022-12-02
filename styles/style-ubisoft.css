@@ -61,7 +61,7 @@ a:hover{
 
 
 .title{
-    margin-left: 710px;
+    margin-left: 820px;
     font-size: 200%;
 }
 .menu{
@@ -78,9 +78,9 @@ article{
 	margin-top: 50px;
 	padding-bottom: 50px;
 	padding-left: 10px;
-	padding-top: 1px;
-	-moz-border-radius: 10px;
+    -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
+    padding-top: 7px;
 }
 h1{
 	text-align: center;
@@ -98,9 +98,30 @@ h1{
 	text-align: center;
 	padding-right: 5px;
 	padding-left: 5px;
-	width: 550px;
+	width: 700px;
 
 
+}
+
+.blairville{
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 500px;
+}
+.arras{
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 500px;
 }
 p{
 	margin: auto;
@@ -115,19 +136,7 @@ ol{
 	padding-right: 50px;
 	font-size: 130%;
 }
-.quizz{
-	text-align: center;
-	font-size: 200%;
-	text-decoration: none;
-	background-color: #34036b;
-	width: 30%;
-	padding: 10px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin: auto;
-	color: white;
-	border-radius: 10%;
-}
+
 footer{
 	font-family : Trebuchet MS, Arial, serif ;
 	padding: 10px 0px 10px 0px;

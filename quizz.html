@@ -3,26 +3,27 @@
 	
 <head>
 	<meta charset=utf-8>
-	<title>Quizz nuit de l'info</title>
+	<title>Quizz sur le VIH</title>
 	<link href='styles/style.css' rel='stylesheet' type='text/css' />
 	<script language="Javascript" src="js/questions.js"></script>
+	<link rel="website icon" type="png" href="./images/logo.png">
 </head>
 
 <body>
 	<header>
-        <img src="images/logo.png" style="width:100px;border:none;" align="left" alt="logo de la nuit de l'info" />
-		<div class = 'title'>Nuit de l'info</div>
+        <img class ="logo"src="images/logo.png" style="width:100px;border:none;" align="left" alt="logo de la nuit de l'info" />
+		<div class = 'title'>Association contre le VIH</div>
 	</header>
 	<nav>
-		<a class = "menu" href = "#"> ACCEUIL</a>
-		<a class = "menu" href = "#"> QUIZZ</a>
-		<a class = "menu" href = "#"> UBISOFT</a>
+		<a class = "menu" href = "index.html"> ACCEUIL</a>
+		<a class = "menu" href = "quizz.html"> QUIZZ</a>
+		<a class = "menu" href = "ubisoft.html"> UBISOFT</a>
 	</nav>
 
 	<div class="div_conteneur_parent">
 	<div id="infos" class="texte_div"></div>
 		<div class="div_conteneur_page">
-			<img src="images/logo.png" style="width:50px;border:none;" align="left" alt="logo de la nuit de l'info" />	
+			<img src="images/logo.png" style="width:50px;border:none;padding: 10px;" align="left" alt="logo de la nuit de l'info" />	
 			<div class="titre_page"><h1>Quizz sur les IST</h1></div>
 			
 			<div class="div_int_page">
@@ -67,9 +68,9 @@
 					<input type="button" value="debuter" style="margin-left:10px;" onClick="debuter();" />
 					<div id="stats" style="float:right;padding-right:15px;">
 					<div style="float:left;font-weight:bold;;">Votre score :&nbsp;</div>
-					<div id="score" style="float:left;font-weight:bold;color:white;">10</div>
+					<div id="score" style="float:left;font-weight:bold;color:white;">15</div>
 					<div style="float:left;font-weight:bold;">, Questions restantes :&nbsp;</div>
-					<div id="restant" style="float:left;font-weight:bold;color:white;">10</div>
+					<div id="restant" style="float:left;font-weight:bold;color:white;">15</div>
 					</div>
 					</div>	
 				</div>					
@@ -84,19 +85,19 @@
 			</div>
 		</div>
 	
-	</div>
-	
+	</div><br><br><br><br><br><br><br>
+	<footer><div class="footer"><a href= 'mention.html' class="legal">Mentions légales</a></div></footer>
 </body>
 <script type="text/javascript" language="javascript">
 
-	var bonne_rep = 0; var nb_questions = 10;
+	var bonne_rep = 0; var nb_questions = 15;
 	var nb_erreurs = 0; var mem_nb_alea="";
 	var jouer=false;
 	
 	function debuter()
 	{
 		jouer = true;
-		bonne_rep = 0; nb_questions = 10;
+		bonne_rep = 0; nb_questions = 15;
 		nb_erreurs = 0; mem_nb_alea="";
 		init();
 		suivant();
@@ -105,7 +106,7 @@
 	function init()
 	{
 		document.getElementById('restant').innerText = nb_questions;
-		document.getElementById('score').innerText = 10-nb_erreurs;	
+		document.getElementById('score').innerText = 15-nb_erreurs;	
 	}
 
 	function valider(num_rep)
@@ -133,9 +134,9 @@
 		
 		while (test == true)
 		{
-			nb_alea = Math.floor(Math.random()*10) + 1;
+			nb_alea = Math.floor(Math.random()*15) + 1;
 			if(mem_nb_alea.indexOf("-" + nb_alea + "-")> - 1)
-				nb_alea = Math.floor(Math.random()*10) + 1;
+				nb_alea = Math.floor(Math.random()*15) + 1;
 			else
 			{
 				test = false;
